@@ -1,5 +1,5 @@
 '''
-1. Two Sum
+ 1. Two Sum
  - Given an array of integers nums and an integer target, return indices of the 
 two numbers such that they add up to target.
  - You may assume that each input would have exactly one solution, and you may 
@@ -8,14 +8,13 @@ two numbers such that they add up to target.
 What we need to do:
     - We need to return indices of values that adds up to the target value.
     - Since we are given an assumption the problem further simplifies, that 
-    is we need to check and return only two indices
+    is there exist a solution.
     
 Solution Logic:
-    - Pick a value at an index and sum it up by pairing it with rest of the elements 
-    in the list to check the sum is equal to target
-    - Iterate through the list using two different itterators
-    - Check if sum of the value at the indices adds up to the target
-    - Return the indices
+    - Since we know that there exists a unique solution
+    - We can pick an element and check if it's counterpart(target - element) is present in dictionary.
+    - If we come accross an element whose counterpart is present in the dictionary then return the the two elements
+    - Else add the {element,index} to the dictionary
 '''
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
