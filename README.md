@@ -1,6 +1,6 @@
 # LeetCode
 ## LeetCode problems walkthrough with clearly explained solutions.
-### Language: Python
+### Language: Python, Java
 <br>My attempt at leetcode problems, explaining how I solved them and what went on my mind while solving them.
 <br><br>**What do you get?**
  - A brief walkthrough of the problem statement
